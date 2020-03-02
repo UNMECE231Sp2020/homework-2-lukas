@@ -1,10 +1,11 @@
 #include <iostream>
+#include "Proto.hpp"
 
 int main() {
 	Complex c1;
 	c1.print();
 
-	Complex c2(1.0);
+	Complex c2(1.0, 0.0);
 	c2.print();
 
 	Complex c3(3.0, 4.0);
@@ -35,8 +36,8 @@ int main() {
 	std::cout << "Magnitude: " << c4.magnitude() << " should be 13" << std::endl;
 
 	//Phase
-	std::cout << "Phase: " << c3.phase() << " should be 53.1301" << std::endl;
-	std::cout << "Phase: " << c4.phase() << " should be 67.3801" << std::endl;
+	std::cout << "Phase: " << c3.Phase() << " should be 53.1301" << std::endl;
+	std::cout << "Phase: " << c4.Phase() << " should be 67.3801" << std::endl;
 
 	std::cout << "Testing overloaded operators" << std::endl;
 
